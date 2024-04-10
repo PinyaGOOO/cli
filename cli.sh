@@ -12,7 +12,7 @@ nmcli con modify Проводное\ подключение\ 1 ipv4.gateway 4.4.
 useradd -c "Admin" admin -U
 echo "admin:P@ssw0rd" | chpasswd
 
-hostnamectl set-hostname CLI; exec bash
+hostnamectl set-hostname cli; exec bash
 
 
 
