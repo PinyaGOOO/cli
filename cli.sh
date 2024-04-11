@@ -10,6 +10,8 @@ nmcli con modify Проводное\ подключение\ 1 ipv6.gateway 2024
 nmcli con modify Проводное\ подключение\ 1 ipv4.method manual ipv4.addresses 4.4.4.2/30
 nmcli con modify Проводное\ подключение\ 1 ipv4.gateway 4.4.4.1
 
+systemctl restart NetworkManager
+
 useradd -c "Admin" admin -U
 echo "admin:P@ssw0rd" | chpasswd
 
