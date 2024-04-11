@@ -1,4 +1,5 @@
 #!/bin/bash
+dnf remove -y git
 nmcli con modify ens18 ipv6.method manual ipv6.addresses 2024:3::2/64
 nmcli con modify ens18 ipv6.gateway 2024:3::1
 nmcli con modify ens18 ipv4.method manual ipv4.addresses 3.3.3.2/30
