@@ -12,10 +12,10 @@ nmcli con modify Проводное\ подключение\ 1 ipv4.gateway 4.4.
 
 systemctl restart NetworkManager
 
-useradd -c "Admin" admin -U
-echo "admin:P@ssw0rd" | chpasswd
+useradd -c "Admin" Admin -U
+echo "Admin:P@ssw0rd" | chpasswd
 
-hostnamectl set-hostname cli; exec bash
+hostnamectl set-hostname CLI; exec bash
 
 
 
